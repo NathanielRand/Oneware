@@ -1,0 +1,22 @@
+body {
+    /* margin: 0%; */
+    /* background-color: #546e7a; */
+    background: url(/assets/images/trianglify.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    /* font-family: 'Comfortaa', cursive; */
+    color: #546e7a;
+}
+
+.card-title {
+    color: #546e7a;
+}
+
+#card-shaped {
+    border-radius: 24px 8px;
+}
