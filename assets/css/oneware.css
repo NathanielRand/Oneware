@@ -6,17 +6,29 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    /* Set a specific height
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;     */ */
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 3%;
     color: #546e7a;
 }
 
-.card-title {
+.card-title {    
     color: #546e7a;
 }
 
+.card-action {
+
+}
 #card-shaped {
     border-radius: 24px 8px;
 }
