@@ -16,10 +16,19 @@ body {
     background-repeat: no-repeat;     */ */
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Comfortaa', cursive;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa', cursive;    
+    font-weight: normal;
     letter-spacing: 3%;
     color: #546e7a;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;    
+    font-weight: lighter;
+    letter-spacing: 3%;
+    color: #78909c;
+    font-size: 1.6rem;
 }
 
 .card-title {    
