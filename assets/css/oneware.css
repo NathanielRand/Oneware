@@ -16,7 +16,7 @@ body {
     background-repeat: no-repeat;     */ */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, a {
     font-family: 'Comfortaa', cursive;    
     font-weight: normal;
     letter-spacing: 3%;
@@ -41,3 +41,15 @@ p {
 #card-shaped {
     border-radius: 24px 8px;
 }
+
+/* Animations */
+
+.animated.delay-6s {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.animated.delay-7s {
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+  }
