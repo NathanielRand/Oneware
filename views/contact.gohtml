@@ -1,9 +1,31 @@
 {{define "yield"}}
-    <h1>Contact Oneware</h1>
-
-    <a href="mailto:support@oneware.store">
-    support@oneware.store
-    </a>.
-
-    {{template "footer"}}
+    <div class="row center">
+        <h1 class="thin animated lightSpeedIn">Contact</h1>
+        <h4 class="blue-grey-text text-lighten-5 animated bounceInLeft delay-1s">Say things below</h4>
+        <br><br>        
+    </div>
+    <div class="row center">
+        <div class="col s12 m8 offset-m2">
+            <div id="card-shaped" class="card animated bounceInUp delay-1s">
+                <div class="card-content">                                        
+                    <br>
+                    <img src="/assets/images/email.png" alt="software" 
+                        class="animated bounceInRight delay-2s"
+                        style="width: 100px; height: 100px; margin-top: 1.6rem; margin-bottom: 1.6rem;">                    
+                    <br><br><br>
+                    <a href="mailto:onewareio@gmail.com" 
+                        class="btn btn-large amber darken-1 animated bounceInLeft delay-2s z-depth-5"
+                        style="border-radius: 8px 24px;">
+                        <i class="material-icons right">mail_outline</i> EMAIL 
+                    </a>
+                    <br><br><br>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="row center">
+        <br><br>
+        <h4 class="blue-grey-text text-lighten-4 thin animated bounceInUp delay-4s">Not much else to do here...</h4>
+        <br><br>
+    </div>
 {{end}}

@@ -16,7 +16,17 @@ body {
     background-repeat: no-repeat;     */ */
 }
 
-h1, h2, h3, h4, h5, h6, a {
+h1 {
+    font-family: 'Comfortaa', cursive;    
+    font-weight: normal;
+    font-size: 4rem;
+    letter-spacing: 3%;
+    margin-top: 12rem;
+    margin-bottom:1rem;
+    color: #ffb300;
+}
+
+h2, h3, h4, h5, h6, a {
     font-family: 'Comfortaa', cursive;    
     font-weight: normal;
     letter-spacing: 3%;
@@ -26,9 +36,13 @@ h1, h2, h3, h4, h5, h6, a {
 p {
     font-family: 'Comfortaa', cursive;    
     font-weight: lighter;
+    font-size: 1.6rem;
     letter-spacing: 3%;
     color: #78909c;
-    font-size: 1.6rem;
+}
+
+.btn .btn-large {
+    border-radius: 8px 24px;
 }
 
 .card-title {    
@@ -39,7 +53,7 @@ p {
 
 }
 #card-shaped {
-    border-radius: 24px 8px;
+    border-radius: 42px 14px;
 }
 
 /* Animations */

@@ -1,22 +1,30 @@
 {{define "navbar"}}
     <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper blue-grey lighten-1">
-            <a href="/" class="brand-logo thin blue-grey-text text-lighten-5" style="margin-left: 2%; letter-spacing: 5%;">ONEWARE</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <div class="nav-wrapper blue-grey lighten-2">
+            <a href="/" class="brand-logo thin blue-grey-text text-lighten-5" style="margin-left: 2%; letter-spacing: 5%; font-size: 1.6rem;">ONEWARE <b class="amber-text text-darken-1">IO</b></a>
+            <a href="#" data-target="oneware-nav" class="sidenav-trigger"><i class="material-icons">keyboard_arrow_right</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="/services">SERVICES</a></li>
+                <li><a href="/services">SERVICES</a></li>                
                 <li><a href="/projects">PROJECTS</a></li>            
-                <a class="waves-effect waves-light btn amber darken-1 z-depth-2">CONTACT <i class="material-icons right">mail_outline</i></a></li>
+                <a href="/contact" class="waves-effect waves-light btn amber darken-1 z-depth-2" style="border-radius: 12px 4px;">CONTACT <i class="material-icons right">mail_outline</i></a></li>
             </ul>
             </div>
         </nav>
     </div>
     
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a class="waves-effect waves-light btn">Button <i class="material-icons right">cloud</i></a></li>
+    <ul class="sidenav blue-grey lighten-3" id="oneware-nav">
+        <br><br>
+        <div class="center">
+            <img src="/assets/images/logo.png" alt="software" style="width: 8rem; height: 8rem;">
+            <h4>ONEWARE <b class="amber-text text-darken-1">IO</b></h4>        
+        </div>
+        <br>
+        <div class="divider blue-grey lighten-2"></div><br><br>
+        <li><a href="/services" class="blue-grey-text text-darken-1"><h5>SERVICES</h5></a></li>        
+        <li><a href="/projects" class="blue-grey-text text-darken-1"><h5>PROJECTS</h5></a></li>      
+        <br>  
+        <li><a href="/contact" class="waves-effect waves-light btn btn-large amber darken-1 white-text z-depth-2" style="border-radius: 18px 6px;">CONTACT <i class="material-icons right white-text">mail_outline</i></a></li>
     </ul>
+    
 {{end}}
