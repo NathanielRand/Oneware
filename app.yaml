@@ -15,4 +15,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-runtime: go112
+application: Oneware
+version: 1
+runtime: go
+api_version: go1
+
+handlers:
+
+- url: /(.*\.(gif|png|jpg))$
+  static_files: static/\1
+  upload: static/.*\.(gif|png|jpg)$
+
+- url: /.*
+  script: _go_app
