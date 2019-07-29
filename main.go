@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"oneware/views"
+	"Oneware/views"
 
 	"github.com/gorilla/mux"
 )
@@ -85,5 +85,5 @@ func main() {
 	r.HandleFunc("/partners", partners)
 	r.HandleFunc("/projects", projects)
 	r.HandleFunc("/services", services)
-	http.ListenAndServe(":3000", r)
+	http.ListenAndServe(":8080", r)
 }
