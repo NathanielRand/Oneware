@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/NathanielRand/Oneware/views"
+	"Oneware/views"
 
 	"github.com/gorilla/mux"
 )
