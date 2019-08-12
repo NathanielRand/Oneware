@@ -52,9 +52,6 @@ p {
 .card-action {
 
 }
-#card-shaped {
-    border-radius: 42px 14px;
-}
 
 /* Animations */
 
@@ -67,3 +64,19 @@ p {
     -webkit-animation-delay: 7s;
     animation-delay: 7s;
   }
+
+  /* IDs */
+
+#card-shaped {
+    border-radius: 45px 15px;
+}
+
+#stack-title {
+    color: #cfd8dc;
+}
+
+#stack-card-image {
+    margin: 2.5%; 
+    width: 95%;
+    border-radius: 45px 15px;    
+}
