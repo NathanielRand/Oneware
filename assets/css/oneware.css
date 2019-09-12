@@ -26,7 +26,7 @@ h1 {
     color: #ffb300;
 }
 
-h2, h3, h4, h5, h6, a {
+h2, h3, h4, h5, h6 {
     font-family: 'Comfortaa', cursive;    
     font-weight: normal;
     letter-spacing: 3%;
@@ -38,7 +38,7 @@ p {
     font-weight: lighter;
     font-size: 1.6rem;
     letter-spacing: 3%;
-    color: #78909c;
+    color: #607d8b;
 }
 
 .btn .btn-large {
