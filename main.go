@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"net/http"
 
 	"Oneware/views"
@@ -11,9 +12,9 @@ import (
 var notFoundView *views.View
 var aboutView *views.View
 var contactView *views.View
-var csInstallGoView *views.View
-var csUpgradeGoView *views.View
-var csHelloGoView *views.View
+var tutInstallGoView *views.View
+var tutUpgradeGoView *views.View
+var tutHelloGoView *views.View
 var educationView *views.View
 var homeView *views.View
 var partnersView *views.View
@@ -46,26 +47,26 @@ func contact(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func csInstallGo(w http.ResponseWriter, r *http.Request) {
+func tutInstallGo(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-	if err := csInstallGoView.Template.ExecuteTemplate(w,
-		csInstallGoView.Layout, nil); err != nil {
+	if err := tutInstallGoView.Template.ExecuteTemplate(w,
+		tutInstallGoView.Layout, nil); err != nil {
 		panic(err)
 	}
 }
 
-func csUpgradeGo(w http.ResponseWriter, r *http.Request) {
+func tutUpgradeGo(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-	if err := csUpgradeGoView.Template.ExecuteTemplate(w,
-		csUpgradeGoView.Layout, nil); err != nil {
+	if err := tutUpgradeGoView.Template.ExecuteTemplate(w,
+		tutUpgradeGoView.Layout, nil); err != nil {
 		panic(err)
 	}
 }
 
-func csHelloGo(w http.ResponseWriter, r *http.Request) {
+func tutHelloGo(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-	if err := csHelloGoView.Template.ExecuteTemplate(w,
-		csHelloGoView.Layout, nil); err != nil {
+	if err := tutHelloGoView.Template.ExecuteTemplate(w,
+		tutHelloGoView.Layout, nil); err != nil {
 		panic(err)
 	}
 }
@@ -135,9 +136,9 @@ func main() {
 	aboutView = views.NewView("materialize", "views/about.gohtml")
 	contactView = views.NewView("materialize", "views/contact.gohtml")
 
-	csInstallGoView = views.NewView("materialize", "views/cheatsheets/install-go.gohtml")
-	csUpgradeGoView = views.NewView("materialize", "views/cheatsheets/upgrade-go.gohtml")
-	csHelloGoView = views.NewView("materialize", "views/cheatsheets/hello-go.gohtml")
+	tutInstallGoView = views.NewView("materialize", "views/tutorial/install-go.gohtml")
+	tutUpgradeGoView = views.NewView("materialize", "views/tutorial/upgrade-go.gohtml")
+	tutHelloGoView = views.NewView("materialize", "views/tutorial/hello-go.gohtml")
 
 	educationView = views.NewView("materialize", "views/education.gohtml")
 	homeView = views.NewView("materialize", "views/home.gohtml")
@@ -164,14 +165,17 @@ func main() {
 	r.HandleFunc("/", home)
 	r.HandleFunc("/about", about)
 	r.HandleFunc("/contact", contact)
-	r.HandleFunc("/cheatsheets/install-go", csInstallGo)
-	r.HandleFunc("/cheatsheets/upgrade-go", csUpgradeGo)
-	r.HandleFunc("/cheatsheets/hello-go", csHelloGo)
+	r.HandleFunc("/tutorial/install-go", tutInstallGo)
+	r.HandleFunc("/tutorial/upgrade-go", tutUpgradeGo)
+	r.HandleFunc("/tutorial/hello-go", tutHelloGo)
 	r.HandleFunc("/education", education)
 	r.HandleFunc("/partners", partners)
 	r.HandleFunc("/projects", projects)
 	r.HandleFunc("/tutorials", tutorials)
 	r.HandleFunc("/services", services)
 	r.HandleFunc("/stack", stack)
+
+	// Server
+	log.Println("Build success!")
 	http.ListenAndServe(":8080", r)
 }
