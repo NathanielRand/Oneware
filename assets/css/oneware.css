@@ -33,7 +33,7 @@ h2, h3, h4, h5, h6 {
     color: #546e7a;
 }
 
-p {
+p , a {
     font-family: 'Comfortaa', cursive;    
     font-weight: lighter;
     font-size: 1.6rem;
