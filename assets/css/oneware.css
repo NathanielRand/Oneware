@@ -5,7 +5,9 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;    
+    transition: 0s linear;
+    transition-property: background-position;
 
     /* Set a specific height
     height: 500px; 
