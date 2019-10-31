@@ -1,16 +1,3 @@
-# Oneware
-## Just a bunch of gophers.
+# Oneware IO
 
-
-*cd src/Oneware*
-
-### Run Locally
-
-*go run main.go*
-
-or
-
-*fresh* (if fresh is installed)
-
-### Deploy to AppEngine
-*gcloud app deploy*
+### A simple static web app built in Go, designed with Materialize CSS, and deployed on GAE.
