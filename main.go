@@ -1,27 +1,29 @@
+// Oneware Inc. Copyright 2019
 package main
 
 import (
+	"Oneware/views"
 	"log"
 	"net/http"
-
-	"Oneware/views"
 
 	"github.com/gorilla/mux"
 )
 
-var notFoundView *views.View
-var aboutView *views.View
-var contactView *views.View
-var tutInstallGoView *views.View
-var tutUpgradeGoView *views.View
-var tutHelloGoView *views.View
-var educationView *views.View
-var homeView *views.View
-var partnersView *views.View
-var projectsView *views.View
-var tutorialsView *views.View
-var servicesView *views.View
-var stackView *views.View
+var (
+	notFoundView     *views.View
+	aboutView        *views.View
+	contactView      *views.View
+	tutInstallGoView *views.View
+	tutUpgradeGoView *views.View
+	tutHelloGoView   *views.View
+	educationView    *views.View
+	homeView         *views.View
+	partnersView     *views.View
+	projectsView     *views.View
+	tutorialsView    *views.View
+	servicesView     *views.View
+	stackView        *views.View
+)
 
 func notFound(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
