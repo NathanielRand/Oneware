@@ -2,7 +2,7 @@
 package main
 
 import (
-	"Oneware/views"
+	"oneware/views"
 	"log"
 	"net/http"
 
