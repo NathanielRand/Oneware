@@ -2,9 +2,9 @@
 package main
 
 import (
-	"oneware/views"
 	"log"
 	"net/http"
+	"oneware/views"
 
 	"github.com/gorilla/mux"
 )
@@ -133,6 +133,10 @@ func faviconHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "/favicon.ico")
 }
 
+func robotsHandler(w http.ResponseWriter, r *http.Request) {
+	http.ServeFile(w, r, "/robots.txt")
+}
+
 func main() {
 	notFoundView = views.NewView("materialize", "views/notfound.gohtml")
 	aboutView = views.NewView("materialize", "views/about.gohtml")
@@ -162,6 +166,9 @@ func main() {
 
 	// Favicon
 	r.HandleFunc("/favicon.ico", faviconHandler)
+
+	// Robots
+	r.HandleFunc("/robots.txt", robotsHandler)
 
 	// Static Routes
 	r.HandleFunc("/", home)
