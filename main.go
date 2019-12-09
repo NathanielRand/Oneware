@@ -4,7 +4,7 @@ package main
 import (
 	"log"
 	"net/http"
-	"oneware/views"
+	"github.com/NathanielRand/oneware/views"
 
 	"github.com/gorilla/mux"
 )

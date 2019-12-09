@@ -77,8 +77,17 @@ p , a {
     color: #cfd8dc;
 }
 
-#stack-card-image {
-    margin: 2.5%; 
-    width: 95%;
+#project-card-image {
+    /* margin: 2.5%;  */
+    /* width: 95%; */
     border-radius: 45px 15px;    
+    border-top: 2px solid #eceff1; 
+    width: 85%;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#project-visit-button {
+    border-radius: 30px 10px;
 }
