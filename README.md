@@ -1,3 +1,7 @@
 # Oneware IO
 
-### A simple static web app built in Go, designed with Materialize CSS, and deployed on GAE.
+## [Oneware Site](https://oneware.io)
+
+We build software and hardware for early stage startups. MVPs, Betas, and Promotion sites.
+
+### Oneware is a static web application built in Go, designed with Materialize CSS, and deployed on GAE.
